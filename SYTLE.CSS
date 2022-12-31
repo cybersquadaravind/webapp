@@ -1,51 +1,115 @@
 @import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-.logo{
-	width:70px;
-	height:70px;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
 }
-/* Navigation bar*/
-#nav-item1{
+body{
+	background: #000;
+}
+h1.title{
+	margin-bottom: 20px;
+	color: #444444;
+	font-family: 'Allura', cursive;
+	text-transform: uppercase;
+	font-size: 38px;
+	word-spacing: 25px;
+	letter-spacing: 5px;
+}
+
+.main_container{
+    background: #36454F;
+	position: relative;
+}
+
+/* Navigation bar */
+.navbar{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	background: #33333300;
+	z-index: 1;
+}
+.navbar .logo{
+	display: flex;
+	width: 200px;
+	height: 100px;
+}
+.logo a{
+    font-family: 'Ubuntu', sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+}
+
+.navbar .navbar_items ul{
+	display: flex;
+}
+
+.navbar .navbar_items ul li{
+	text-transform: uppercase;
+	margin: 0 10px;
+}
+
+.nav__links li a {
+	color: #ffffff;
+    transition: color 0.3s ;
+  }
+  
+  .nav__links li a:hover {
 	font-weight: bolder;
-	color:white;
-}
-#nav-item2{
-	font-weight: bolder;
-	color:white;
-}
-#nav-item3{
-	font-weight: bolder;
-	color:white;
-}
-#nav-item4{
-	font-weight: bolder;
-	color:white;
-}
-#nav-item5{
-	font-weight: bolder;
-	color:white;
-}
-#nav-item6{
-	font-weight: bolder;
-	color:white;
-}
-#nav-item7{
-	font-weight: bolder;
-	color:white;
-}
+    color: #a90000;
+  }
+  
 /* Banner Image */
 .banner_image{
-	background-image:url("./img/bg-3.jpg");
-    background-size:cover;
-	height:100vh;
+	background: url("./img/bg-3.jpg") no-repeat top center;
+    background-size: cover;
+	width: 100%;
+	height: 641px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.banner-heading{
-	color:white;
+.mid{
+	width: 100%;
+	display: flex;
+	align-items: center;
 }
-.banner-description{
-color:white;
-font-size:24px;
+.banner_content{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+}
+
+.banner_content h1{
+	text-transform: uppercase;
+	line-height: 38px;
+
+}
+
+.banner_content h1 span{
+    font-size: 50px;
+    line-height: 1.5;
+	color: #ffffff;
+}
+
+.banner_content p{
+	font-size: x-large;
+	line-height: 20px;
+    line-height: 1.5;
+	color: #ffffff;
 }
 /*info*/
 .info{
@@ -54,29 +118,54 @@ font-size:24px;
     flex-direction: row;
 	z-index: 1;
     width: 100%;
-	background-image: url(./img/bg-4.jpg);
-	background-size: cover;
+    height: 650px;
+	background: #36454F;
 	align-items: center;
 }
 .info .text{
     padding: 10px;
     display: flex;
     flex-direction: column;
-	color: #ffffff;
+	color: #000000;
     width: 50%;
     font-size: 25px;
     text-align: justify;
 
 }
-.ceo-image{
-	height: 400px;
-	width:100%;
+.info .MNM{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+
+}
+.info .img{
+    display: flex;
+	flex-direction: column;
+    background-image: url(./img/img.jpg);
+    height: 67vh;
+    background-size: cover;
+	transform: translate(10%);
+}
+.info .TXT{
+	display: flex;
+	flex-direction: column;
+    text-align: center;
+}
+.info .TXT h3{
+	color: #fff;
+	text-transform: uppercase;
+
+
 }
 .info p{
 	margin-bottom: 15px;
 	line-height: 20px;
     line-height: 1.5;
 	color: #ffffff;
+}
+MARQUEE{
+	font-size: 20px;
+	color: rgb(255, 255, 255);
 }
 /* About us */
 /*.about,
@@ -305,4 +394,20 @@ ul{
   .footer-col{
     width: 100%;
 }
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
 }
