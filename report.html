@@ -17,18 +17,19 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
     <script>
-        const firebaseConfig = {
-            apiKey: "AIzaSyBzVJvFjRvU7MOurwLSGchhCy5YsKl94fI",
-            authDomain: "cyber-8b1a1.firebaseapp.com",
-            projectId: "cyber-8b1a1",
-            storageBucket: "cyber-8b1a1.appspot.com",
-            messagingSenderId: "260447334958",
-            appId: "1:260447334958:web:b91a597f24f4afd52ae5bf",
-            measurementId: "G-CL7VJJQ2CK"
-        };
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-    </script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyBzVJvFjRvU7MOurwLSGchhCy5YsKl94fI",
+        authDomain: "cyber-8b1a1.firebaseapp.com",
+        projectId: "cyber-8b1a1",
+        storageBucket: "cyber-8b1a1.appspot.com",
+        messagingSenderId: "260447334958",
+        appId: "1:260447334958:web:b91a597f24f4afd52ae5bf",
+        measurementId: "G-CL7VJJQ2CK"
+      };
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+     
+        </script>
 
 
     <nav class="navbar navbar-expand-lg navbar-light bg-clr fixed-top">
@@ -64,74 +65,50 @@
                 <hr>
             </div>
             <div class="container">
-                <label for="Firstname"><b>First Name</b></label><br>
-                <input type="text" size="30" autofocus placeholder="Enter Firstname" name="firstname" id="firstname" required><br><br>
+                <label for="Firstname" >First name</b></label><br>
+                     <input type="text" size="30" autofocus placeholder="Enter Firstname" name="firstname" id="firstname" required></area><br><br>
+          
+                     <label for="lastname" >Lastname</b></label><br>
+                     <input type="text" size="30" placeholder="Enter Lastname" name="lastname" id="lastname" required><br><br>
 
-                <label for="lastname"> <b>Last Name</b></label><br>
-                <input type="text" sixe="30" placeholder="Enter Lastname" name="lastname" id="lastname" required><br><br>
+                     <label for="email" >Email</b></label><br>
+                     <input type="text" size="30" placeholder="example@mail.com/.in" name="email" id="email" required></area><br><br>
+          
+                     <label for="number">Contact Number</b></label><br>
+                     <input type="num" size="30" placeholder="Enter your mobile" name="contact number" pattern="[0-9]{10}" id="phone" required ><br><br>
 
-                <label for="email"><b>Email</b></label><br>
-                <input type="text" size="30" placeholder="example@mail.com/.in" name="email" id="email" required><br><br>
+                     <label for="aadhar">Aadharnum</b></label><br>
+                     <input type="num"  size="30" placeholder="Enter 12 digits aadhar num" name="aadhar" pattern="{12}" id="aadhar" required></area><br><br>
+          
+                     <label for="state" >Select state </b></label><br>
+                     <select name="telangana" id="district" >
+                          <option value="state">--Select State--</option>
+                          <option value="Andhra pradesh">Andhra pradesh </option>
+                          <option value="Telangana">Telangana</option>
+                      </select>
+                      <br>
+                      <br>
 
-                <label for="number"><b>Number</b></label><br>
-                <input type="num" size="30" placeholder="Enter your mobile" name="phone" id="phone" required><br><br>
-
-                <label for="aadhar"><b>Aadhar No.</b></label><br>
-                <input type="num" placeholder="Enter 12 digits aadhar num" name="aadhar" id="aadhar" required><br><br>
-
-                <label for="district"><b>District </b></label><br>
-                <select name="telangana" id="district">
-                    <option value="district">--- Choose district here ---</option>
-                    <option value="adilabad">Adilabad </option>
-                    <option value="bhadradri_kothagudem">Bhadradri kothagudem</option>
-                    <option value="hanumakonda">Hanumakonda</option>
-                    <option value="hyderabad">Hyderabad</option>
-                    <option value="jagtial">Jagtial</option>
-                    <option value="jangoan">Jangoan</option>
-                    <option value="jayashankar_bhoopalpally">Jayashankar_bhoopalpally</option>
-                    <option value="jogulamba_gadwal">Jogulamba_gadwal</option>
-                    <option value="kamareddy">Kamareddy</option>
-                    <option value="karimnagar">Karimnagar</option>
-                    <option value="khammam">Khammam</option>
-                    <option value="komaram_bheem/asifabad">Komaram_bheem/asifabad</option>
-                    <option value="mahabubabad">Mahabubabad </option>
-                    <option value="mahabubnagar">Mahabubnagar</option>
-                    <option value="mancherial">Mancherial </option>
-                    <option value="medak">Medak</option>
-                    <option value="medchal_malkajgiri">Medchal_malkajgiri </option>
-                    <option value="mulugu">Mulugu</option>
-                    <option value="nagarkurnool">Nagarkurnool </option>
-                    <option value="nalgonda">Nalgonda</option>
-                    <option value="narayanpet">Narayanpet </option>
-                    <option value="nirmal">Nirmal</option>
-                    <option value="nizamabad">Nizamabad</option>
-                    <option value="peddapalli">Peddapalli</option>
-                    <option value="rajanna_sircilla">Rajanna_sircilla</option>
-                    <option value="rangareddy">Rangareddy</option>
-                    <option value="sangareddy">Sangareddy</option>
-                    <option value="siddipet">Siddipet</option>
-                    <option value="suryapet">Suryapet</option>
-                    <option value="vikarabad">Vikarabad</option>
-                    <option value="wanaparthy">Wanaparthy</option>
-                    <option value="warangal">Warangal</option>
-                    <option value="yadadri_bhuvanagiri">Yadadri_bhuvanagiri</option>
+                 <label for="gender" >Select your gender</b></label>
+                 <br>
+                 <select  id="gender">
+                    
+                    <option value="GENDER">--GENDER--</option>
+                    <option value="male">Male </option>
+                    <option value="female">Female</option>
+                    <option value="other">other</option>
                 </select>
-                <br>
-                <br>
-                <label for="gender"><b>Select your gender</b></label>
-                <br>
-                <input type="radio" name="gender" id="genderMale" value="Male" />
-                <label for="genderMale">Male</label>
-                <input type="radio" name="gender" id="genderFemale" value="Female" class="ml-2" />
-                <label for="genderFemale">Female</label>
-                <br>
-                <br>
-                <label for="pincode"><b>Pincode</b></label><br>
-                <input type="num" placeholder="Enter Pincode/Postal" name="pincode" id="pincode" required><br><br>
-                <label for="address"><b>Address</b></label><br>
-                <input type="text" size="#" placeholder="Enter your address" name="address" id="address" required><br><br>
-                <label for="description"><b>Description</b></label><br>
-                <textarea class="desc" cols="80" rows="6" value="description" placeholder="Please provide some additional information about the incident" id="description"></textarea>
+                    <br>
+                    <br>
+
+                 <label for="pincode">Pincode</b></label><br>
+                 <input type="num"  size="30" placeholder="Enter Pincode/Postal" name="pincode" pattern="{6}" id="pincode" required></area><br><br>
+
+                 <label for="address">Address</b></label><br>
+                 <input type="text" size="30" placeholder="Enter your address" name="address" id="address" required></area><br><br>
+
+                 <label for="description">Description</b></label><br>
+                <textarea cols="30" rows="5" value="description"   placeholder="Please provide some additional information about the incident" id="description"></textarea><br><br><hr>
                 <br>
             </div>
         </form>
@@ -144,34 +121,40 @@
 
 
     <script>
-        function st()
-        {
-            var m1=document.getElementById("firstname").value;
-            var m2=document.getElementById("lastname").value;
-            var m3=document.getElementById("email").value;
-            var m4=document.getElementById("phone").value;
-            var m5=document.getElementById("aadhar").value;
-            var m6=document.getElementById("district").value;
-            var m7=document.getElementById("gender").value;
-            var m8=document.getElementById("pincode").value;
-            var m9=document.getElementById("address").value;
-            var m10=document.getElementById("description").value;
-            firebase.database().ref('cyber').child("complaint").push().set(
-                {
-                    firstname:m1,
-                    lastname:m2,
-                    email:m3,
-                    phone:m4,
-                    aadhar:m5,
-                    district:m6,
-                    gender:m7,
-                    pincode:m8,
-                    address:m9,
-                    description:m10
-                }
-                );
-                alert("Your complaint successfully taken by the team. We will get back to you in a short while");
-            }
+             function st(){
+                    var m1=document.getElementById("firstname").value; 
+                    var m2=document.getElementById("lastname").value;
+                    var m3=document.getElementById("email").value;
+                    var m4=document.getElementById("phone").value;
+                    var m5=document.getElementById("aadhar").value;
+                    var m6=document.getElementById("district").value;
+                    var m7=document.getElementById("gender").value;
+                    var m8=document.getElementById("pincode").value;
+                    var m9=document.getElementById("address").value;
+                    var m10=document.getElementById("description").value;
+
+        firebase.database().ref('cyber').child("complaint").push().set(
+    {
+firstname:m1,
+lastname:m2,
+email:m3,
+phone:m4,
+aadhar:m5,
+district:m6,
+gender:m7,
+pincode:m8,
+address:m9,
+description:m10
+
+}
+);
+alert("your complaint successfully taken by the team.soon we will get back to you)");
+}
+
+
+
+
+      
         </script>
 
 </body>
